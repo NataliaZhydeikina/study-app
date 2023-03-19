@@ -43,16 +43,13 @@
     position: relative;
     overflow: hidden;
 }
-.Course-lesson:nth-child(4n) {
+.Course-lesson:nth-child(3n) {
     background-color: #FEC7C7;
 }
-.Course-lesson:nth-child(4n+1) {
-    background-color: #FFE482;
-}
-.Course-lesson:nth-child(4n+2) {
+.Course-lesson:nth-child(3n+1) {
     background-color: #CCEDFF;
 }
-.Course-lesson:nth-child(4n+3) {
+.Course-lesson:nth-child(3n+2) {
     background-color: #D0FFF0;
 }
 .Course-lesson-img {
@@ -61,6 +58,29 @@
     border-radius: 1.25em;
     box-shadow: 0 0.95em 0 -0.65em #fff, 
     0 1em 0 -0.5em #000;
+}
+.Course-lesson:nth-child(n) {
+    transform: rotate(-2deg);
+}
+.Course-lesson:nth-child(2n+1) {
+    transform: rotate(2deg);
+}
+.Course-lesson:hover, .Course-lesson.active {
+    transition: 0.25s;
+    background-color: #FFE482;
+    box-shadow: 0 0 0 0.25em #FEA713, 0 0 0 0.5em #000;
+    
+}
+.Course-lesson:hover .Course-lesson-img,
+.active .Course-lesson-img  {
+    transition: 0.25s;
+    box-shadow: 0 1.05em 0 -0.65em #fff, 
+    0 1.1em 0 -0.5em #000;
+}
+.Course-lesson:hover .Course-lesson-img-wrapper::after,
+.active .Course-lesson-img-wrapper::after  {
+    transform: translate(1.25em, -65%);
+    transition: 0.25s;
 }
 .Course-lesson-img-wrapper {
     position: relative;
@@ -85,13 +105,35 @@
     margin: 0;
     margin-top: 1em;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 .Course-overflow.locked {
     background: url(/src/assets/imgs/lock.png) #22C993 no-repeat;
     position: absolute;
     inset: 0;
+    z-index: 2;
     background-position: center;
     background-size: 25%;
+}
+.Course-speed {
+    position: absolute;
+    z-index: 3;
+    border: 2px solid #000;
+    background-color: #fff;
+    border-radius: 1.15em;
+    padding: 0 0.5em;
+    font-size: 1.5em;
+    inset: 2em 2em auto auto;
+}
+.Course-speed-btn {
+    padding: 0.5em;
+    background: transparent;
+    border: none;
+    font-weight: 600;
+}
+.Course-speed-btn:focus, .Course-speed-btn:focus-visible {
+    outline: none;
 }
 
 @media screen and (max-width: 768px) {

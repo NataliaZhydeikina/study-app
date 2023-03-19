@@ -29,7 +29,7 @@ const CourseCard = ({
                 <h3 className="CourseCard-title">{title}</h3> 
                 <p className="CourseCard-time">
                     <img className="CourseCard-time-img" src={studyImg} alt="lessons icon" />
-                    {lessonsCount} lessons/{duration}h
+                    {lessonsCount} lessons/{Math.ceil(duration/60)}h
                 </p>
                 <p className="CourseCard-desc">{description}</p>
                  <div className="CourseCard-skills">{
