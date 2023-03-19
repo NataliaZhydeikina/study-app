@@ -1,0 +1,44 @@
+.Pagination-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+    gap: 4em 3em;
+    padding: 4em;
+}
+.Pagination-toolbar {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+.Pagination-btn {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1em;
+    background-color: #22C993;
+    border: 2px solid #000;
+    height: 3.75em;
+    width: 4em;
+    transition: 0.5s;
+}
+.Pagination-btn-next {
+    background-color: transparent;
+    width: 4.5em;
+    height: 4.5em;
+    padding: 0;
+}
+.Pagination-btn-prev {
+    background-color: transparent;
+    transform: rotate(180deg);
+    width: 4.5em;
+    height: 4.5em;
+    padding: 0;
+}
+.Pagination-btn-prev img, .Pagination-btn-next img {
+    width: 100%;
+}
+.Pagination-btn.active {
+    box-shadow: 0 0 0 0.25em #fff, 0 0 0 0.5em #000;
+}
+.Pagination-more {
+    width: 3em;
+}

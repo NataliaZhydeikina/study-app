@@ -1,0 +1,1 @@
+![website screenshot](https://raw.githubusercontent.com/NataliaZhydeikina/study-app/main/src/assets/imgs/site.png)

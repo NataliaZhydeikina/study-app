@@ -1,0 +1,85 @@
+.Loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    position: relative;
+}
+.Loading-img { 
+    padding: 5.25em 1em;  
+    border-radius: 1em; 
+    width: 9em;
+}
+.Loading-ring
+{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:20em;
+  height:20em;
+  background:transparent;
+  border:0.5em solid #000000;
+  border-radius:50%;
+  text-align:center;
+}
+.Loading-ring:before
+{
+  content:'';
+  position:absolute;
+  top:-0.5em;
+  left:-0.5em;
+  width:100%;
+  height:100%;
+  border:0.5em solid transparent;
+  border-top:0.5em solid #FFE482;
+  border-right:0.5em solid #FFE482;
+  border-radius:50%;
+  animation:animateC 2s linear infinite;
+}
+.Loading-ring span
+{
+  display:block;
+  position:absolute;
+  top:calc(50% - 2px);
+  left:50%;
+  width:50%;
+  height:4px;
+  background:transparent;
+  transform-origin:left;
+  animation:animate 2s linear infinite;
+}
+.Loading-ring span:before
+{
+  content:'';
+  position:absolute;
+  width: 2em;
+  height: 2em;
+  border-radius:50%;
+  background:#FFE482;
+  top:-12px;
+  right:-12px;
+}
+@keyframes animateC
+{
+  0%
+  {
+    transform:rotate(0deg);
+  }
+  100%
+  {
+    transform:rotate(360deg);
+  }
+}
+@keyframes animate
+{
+  0%
+  {
+    transform:rotate(45deg);
+  }
+  100%
+  {
+    transform:rotate(405deg);
+  }
+}
+

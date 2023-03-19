@@ -1,0 +1,9 @@
+.CourseBtn {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1em;
+    background-color: #22C993;
+    border: 2px solid #000;
+    height: 3.75em;
+    width: 4em;
+    transition: 0.5s;
+}

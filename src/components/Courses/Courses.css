@@ -1,0 +1,13 @@
+.Courses {
+    margin: 0 auto;
+}
+.Courses-heading {
+    font-size: 6em;
+    font-weight: 800;
+    font-family: 'Libre Franklin', sans-serif;
+    padding: 0 0.33em;
+    border-bottom: 2px solid #000;
+    padding-bottom: 0.25em;
+    margin-bottom: 0;
+
+}

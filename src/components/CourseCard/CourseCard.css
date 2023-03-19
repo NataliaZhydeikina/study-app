@@ -1,0 +1,114 @@
+.CourseCard {
+    border: 2px solid #000;
+    border-radius: 2.5em;
+    box-shadow: 0em 0em 0 -0em #fff, 0em 0em 0 0em #000,
+    0em 0em 0 -0em #fff, 0em 0em 0 0em #000,
+    0.75em 0.75em 0 -0.25em #fff, 0.75em 0.75em 0 0em #000;
+    transition: 0.25s;
+    position: relative;
+    grid-column: span 2;
+}
+.CourseCard-container-img {
+    overflow: hidden;
+    border-radius: 2.3em 2.3em 0 0;
+}
+
+.CourseCard:nth-child(4n) {
+    background-color: #FEC7C7;
+    transform: rotate(0.5deg);
+}
+.CourseCard:nth-child(4n+1) {
+    background-color: #FFE482;
+    transform: rotate(-1deg);
+}
+.CourseCard:nth-child(4n+2) {
+    background-color: #CCEDFF;
+    transform: rotate(1deg);
+}
+.CourseCard:nth-child(4n+3) {
+    background-color: #D0FFF0;
+    transform: rotate(-2deg);
+}
+.CourseCard:hover {
+    box-shadow: 0.35em 0.35em 0 -0.25em #fff, 0.35em 0.35em 0 0em #000,
+    0.75em 0.75em 0 -0.25em #fff, 0.75em 0.75em 0 0em #000,
+    1.1em 1.1em 0 -0.25em #fff, 1.1em 1.1em 0 0em #000;
+}
+.CourseCard-container {
+    padding: 1em 1em 1.5em 1em;
+    color: #303027;
+    position: relative;
+    font-size: 1.5em;
+}
+.CourseCard-rating {
+    background: url(/src/assets/imgs/star.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 2px;
+    position: absolute;
+    right: -2em;
+    top: -2em;
+    width: 6em;
+    height: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #303027;
+}
+.CourseCard-title {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 800;
+    margin-top: 0;
+    font-size: 1.5em;
+    margin-bottom: 0.25em;
+}
+.CourseCard-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75em 1em;
+}
+.CourseCard-skill {
+    border: 2px solid #000;
+    background-color: #fff;
+    border-radius: 1.15em;
+    padding: 0.5em 1em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.CourseCard-tags {
+    position: absolute;
+    left: 1.5em;
+    top: 2em; 
+}
+.CourseCard-tag {
+    color: #303027;
+    border: 2px solid #000;
+    background-color: #22C993;
+    border-radius: 10em;
+    padding: 0.5em 1em;
+    font-weight: 600;
+}
+.CourseCard-img {
+    width: 100%;
+    aspect-ratio: 12/5;
+    object-fit: cover;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #000;
+}
+.CourseCard-time {
+    font-weight: 600;
+    margin: 0;
+    gap: 0.4em;
+    display: flex;
+    align-items: center;
+}
+.CourseCard-time-img {
+    width: 1.75em;
+    transform: translateY(-2px);
+}
+.CourseCard-desc {
+    margin: 0.65em 0 1.5em;
+}

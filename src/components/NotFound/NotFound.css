@@ -1,0 +1,26 @@
+.NotFound {
+   display: flex;
+   margin: 1em;
+   gap: 1em;
+   justify-content: center;
+   align-items: center;
+}
+.NotFound-img {
+    max-height: 90vh;
+    min-width: 30em;
+}
+.NotFound-heading {
+    text-align: center;
+    font-weight: 800;
+    font-family: 'Libre Franklin', sans-serif;
+}
+.NotFound-text {
+    text-align: center;
+    font-size: 1.5em;
+}
+@media screen and (max-width: 768px) {
+    .NotFound {
+        flex-direction: column;
+        gap: 0;
+    }
+}
